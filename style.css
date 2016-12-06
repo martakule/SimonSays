@@ -1,11 +1,20 @@
+body {
+	background: url(tropics.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
 #game {
 	border-radius: 50%;
 	margin:auto;
-	margin-top: 30px;
+	margin-top: 60px;
 	width:500px;
 	height:500px;
 	overflow: hidden;
-	box-shadow: 0px 0px 50px grey;
+	box-shadow: 0px 0px 50px black;
 }
 
 .startgame {
@@ -18,7 +27,17 @@
 	font-size: 1.5em;
 	text-align: center;
 	color:white;
-	box-shadow: 0px 0px 50px grey;
+	box-shadow: 0px 0px 50px black;
+}
+
+.disabled {
+	cursor: default;
+    pointer-events: none;
+}
+
+.enabled {
+	cursor: pointer;
+    pointer-events: auto;
 }
 
 .playagain {
